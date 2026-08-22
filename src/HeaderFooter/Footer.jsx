@@ -20,7 +20,7 @@ function Footer() {
                     <img
                         className="FooterLogo"
                         src={logo}
-                        alt="Prime Klima Logo"
+                        alt="Muharrem Arslan Evden Eve Taşımacılık Logo"
                     />
 
                     <h2 className="FooterPromTitle">
@@ -32,7 +32,10 @@ function Footer() {
                 <hr className="FooterPromHr" />
 
                 <p className="PromotionText">
-                    Muharrem Arslan Evden Eve Taşımacılık olarak eşyalarınızı güvenle, zamanında ve özenle yeni adresinize ulaştırıyoruz. Şehir içi ve şehirler arası nakliyede profesyonel hizmet sunuyoruz.
+                    Muharrem Arslan Evden Eve Taşımacılık olarak eşyalarınızı
+                    güvenle, zamanında ve özenle yeni adresinize ulaştırıyoruz.
+                    Şehir içi ve şehirler arası nakliyede profesyonel hizmet
+                    sunuyoruz.
                 </p>
 
             </div>
@@ -65,26 +68,24 @@ function Footer() {
 
                     <li className="FooterLinks">
                         <ArrowRightIcon />
-                        <Link to="/petek-bakimi">
-                            Petek Bakımı
+                        <Link to="/Evden-eve-nakliyat">
+                            Evden Eve Nakliyat
                         </Link>
                     </li>
 
                     <li className="FooterLinks">
                         <ArrowRightIcon />
-                        <Link to="/beyaz-esya-tamiri">
-                            Beyaz Eşya Tamiri
+                        <Link to="/Sehir-ici-nakliyat">
+                            Şehir İçi Nakliyat
                         </Link>
                     </li>
 
                     <li className="FooterLinks">
                         <ArrowRightIcon />
-                        <Link to="/ariza-onarim">
-                            Arıza Onarım
+                        <Link to="/Sehirler-arasi-nakliyat">
+                            Şehirler Arası Nakliyat
                         </Link>
                     </li>
-
-
 
                 </ul>
 
@@ -104,36 +105,36 @@ function Footer() {
 
                     <li className="FooterSupportLinks">
                         <ArrowRightIcon />
-                        <Link to="/klima-bakimi">
-                            Klima Bakımı
+                        <Link to="/Asansörlü-tasimacilik">
+                            Asansörlü Taşımacılık
                         </Link>
                     </li>
 
                     <li className="FooterSupportLinks">
                         <ArrowRightIcon />
-                        <Link to="/kombi-bakimi">
-                            Kombi Bakımı
+                        <Link to="/Paketleme-ve-ambalajlama">
+                            Paketleme ve Ambalajlama
                         </Link>
                     </li>
 
                     <li className="FooterSupportLinks">
                         <ArrowRightIcon />
-                        <Link to="/petek-bakimi">
-                            Petek Temizleme
+                        <Link to="/Evden-eve-nakliyat">
+                            Evden Eve Taşımacılık
                         </Link>
                     </li>
 
                     <li className="FooterSupportLinks">
                         <ArrowRightIcon />
-                        <Link to="/beyaz-esya-tamiri">
-                            Beyaz Eşya Servisi
+                        <Link to="/Sehir-ici-nakliyat">
+                            Şehir İçi Taşımacılık
                         </Link>
                     </li>
 
                     <li className="FooterSupportLinks">
                         <ArrowRightIcon />
-                        <Link to="/ariza-onarim">
-                            Arıza Onarım
+                        <Link to="/Sehirler-arasi-nakliyat">
+                            Şehirler Arası Taşımacılık
                         </Link>
                     </li>
 
@@ -148,7 +149,8 @@ function Footer() {
                 <hr />
 
                 <p>
-                    © 2026 Muharrem Arslan Evden Eve Taşımacılık | <b>Design By Eren Kaya</b>
+                    © 2026 Muharrem Arslan Evden Eve Taşımacılık |
+                    <b> Design By Eren Kaya</b>
                 </p>
 
             </div>

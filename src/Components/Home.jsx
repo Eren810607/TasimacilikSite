@@ -1,16 +1,13 @@
 import SliderImport from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Button from '@mui/material/Button';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import Header from "../HeaderFooter/Header";
-import Footer from "../HeaderFooter/Footer";
+
 import AccordionPage from "./AccordionPage";
+
 import Sliderimage1 from "../images/Mslider3.png";
 import Sliderimage2 from "../images/Mslider4.png";
 
 import "../App.css";
-
 import "../css/home.css";
 
 import HomeCards from "../Components/HomeCards";
@@ -19,33 +16,36 @@ import HomeTexts from "../Components/HomeTexts";
 
 function Home() {
 
-    const whatsappMessage = "Merhaba, Prime Klima hakkında bilgi almak istiyorum.";
-
-
     const Slider = SliderImport.default ?? SliderImport;
 
-    var settings = {
+    const settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnHover: true,
+        arrows: false,
     };
+
     return (
-        <div>
+        <main>
 
+            {/* SLIDER */}
+            <section
+                className="slider-container"
+                aria-label="Muharrem Arslan Evden Eve Taşımacılık"
+            >
 
-
-
-
-
-            <div className="slider-container">
                 <Slider {...settings}>
+
                     <div>
                         <img
                             className="slider-image"
                             src={Sliderimage1}
-                            alt="Slider 1"
+                            alt="Muharrem Arslan Evden Eve Taşımacılık - Evden Eve Nakliyat"
                         />
                     </div>
 
@@ -53,38 +53,72 @@ function Home() {
                         <img
                             className="slider-image"
                             src={Sliderimage2}
-                            alt="Slider 2"
+                            alt="Muharrem Arslan Evden Eve Taşımacılık - Şehirler Arası Nakliyat"
                         />
                     </div>
+
                 </Slider>
-            </div>
+
+            </section>
 
 
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} >
-                <h1 className="HomepageTitle">Muharrem Arslan Evden Eve Taşımacılık</h1>
+            {/* ANA BAŞLIK */}
+            <section
+                style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center"
+                }}
+            >
+
+                <h1 className="HomepageTitle">
+                    Muharrem Arslan Evden Eve Taşımacılık
+                </h1>
+
                 <hr className="HomeHr" />
-            </div>
+
+            </section>
 
 
-            <div className='homeCard'>
+            {/* HİZMETLER */}
+            <section
+                className="homeCard"
+                aria-label="Nakliyat Hizmetlerimiz"
+            >
                 <HomeCards />
-            </div>
+            </section>
 
 
-            <div>
+            {/* HAKKIMIZDA / TANITIM */}
+            <section>
                 <HomeTexts />
-            </div>
+            </section>
 
 
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} >
-                <h1 className="HomepageTitle">Sıkça Sorulan Sorular</h1>
+            {/* SIKÇA SORULAN SORULAR */}
+            <section
+                style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center"
+                }}
+            >
+
+                <h2 className="HomepageTitle">
+                    Sıkça Sorulan Sorular
+                </h2>
+
                 <hr className="HomeHr" />
 
                 <AccordionPage />
-            </div>
 
-        </div >
-    )
+            </section>
+
+        </main>
+    );
 }
 
-export default Home
+
+export default Home;

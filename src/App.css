@@ -15,7 +15,7 @@ body,
 
 .slider-image {
     width: 100%;
-    height: 700px;
+    height: 800px;
 }
 
 .homePageTitle {
@@ -30,7 +30,7 @@ body,
 .HomeHr {
     display: flex;
     width: 180px;
-    color: rgb(0, 0, 0);
+    color: lightblue;
     margin-bottom: 30px;
 }
 
@@ -69,10 +69,5 @@ body,
         right: 15px;
         bottom: 20px;
 
-    }
-
-    .slider-container {
-        width: 100%;
-        height: auto;
     }
 }
