@@ -1,0 +1,44 @@
+.homeCard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.detailsButton {
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    background-color: dark;
+    color: white;
+
+}
+
+
+@media (min-width: 300px) and (max-width: 992px) {
+
+    .homeCard {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .homeCard>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .homeCard .MuiCard-root {
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+}
