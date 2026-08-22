@@ -30,7 +30,7 @@ body,
 .HomeHr {
     display: flex;
     width: 180px;
-    color: lightblue;
+    color: rgb(0, 0, 0);
     margin-bottom: 30px;
 }
 
@@ -69,5 +69,10 @@ body,
         right: 15px;
         bottom: 20px;
 
+    }
+
+    .slider-container {
+        width: 100%;
+        height: auto;
     }
 }
