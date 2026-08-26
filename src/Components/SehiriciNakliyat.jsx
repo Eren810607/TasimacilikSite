@@ -23,7 +23,7 @@ function SehiriciNakliyat() {
 
                     <Button
                         variant="contained"
-                        onClick={() => window.location.href = "tel:9055199804298"}
+                        onClick={() => window.location.href = "tel:905413830670"}
                         sx={{
                             marginTop: '13px',
                             backgroundColor: "black",

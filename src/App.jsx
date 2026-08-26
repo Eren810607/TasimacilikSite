@@ -17,7 +17,7 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import EvdenEveNakliyat from "./Components/EvdenEveNakliyat";
 
-import BeyazEsyaTamiri from "./Components/AsansörlüTasimacilik";
+import AsansörlüTasimacilik from "./Components/AsansörlüTasimacilik";
 import Paketleme from "./Components/Paketleme";
 import SehiriciNakliyat from "./Components/SehiriciNakliyat";
 import SehirlerArasi from "./Components/SehirlerArasi";
@@ -61,7 +61,7 @@ function App() {
         <Route path="/Evden-eve-nakliyat" element={<EvdenEveNakliyat />} />
         <Route path="/Sehir-ici-nakliyat" element={<SehiriciNakliyat />} />
         <Route path="/Sehirler-arasi-nakliyat" element={<SehirlerArasi />} />
-        <Route path="/Asansörlü-tasimacilik" element={<BeyazEsyaTamiri />} />
+        <Route path="/Asansörlü-tasimacilik" element={<AsansörlüTasimacilik />} />
         <Route path="/Paketleme-ve-ambalajlama" element={<Paketleme />} />
       </Routes>
 
