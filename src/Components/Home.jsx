@@ -1,7 +1,6 @@
 import SliderImport from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useEffect } from "react";
 import AccordionPage from "./AccordionPage";
 import GoogleReviews from "../Components/GoogleReviews";
 import Sliderimage1 from "../images/Mslider3.png";
@@ -16,16 +15,6 @@ import HomeTexts from "../Components/HomeTexts";
 
 function Home() {
 
-    useEffect(() => {
-        fetch("http://localhost:5000/")
-            .then((response) => response.json())
-            .then((data) => {
-                console.log(data);
-            })
-            .catch((error) => {
-                console.error("Backend bağlantı hatası:", error);
-            });
-    }, []);
 
 
     const Slider = SliderImport.default ?? SliderImport;
